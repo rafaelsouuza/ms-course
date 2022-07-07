@@ -38,7 +38,7 @@ public class WorkerResource {
         logger.info("CONFIG = " + testConfig);
         return ResponseEntity.noContent().build();
     }
-
+ 
     @GetMapping
     public ResponseEntity<List<Worker>> findAll() {
         List<Worker> lista = workerRepository.findAll();
